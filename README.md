@@ -59,9 +59,4 @@ A interface do projeto é projetada para ser simples e utiliza apenas HTML, CSS 
   - `group-fase-champ.js`: Lógica para gerenciar a fase de grupos.
 
 ## Deploy
-
 O projeto está atualmente em produção. No entanto, como o servidor é gratuito, pode haver períodos de inatividade. http://lulinucs.duckdns.org/super8/
-=======
-# super8
-Super8 é um projeto de gerenciamento de campeonatos de bike polo, criado para a liga local em comemoração aos 8 anos do Bike Polo Floripa. Desenvolvido com FastAPI para a API e HTML/CSS/JS para a interface, o projeto gerencia times e campeonatos, com foco na fase de grupos e futura inclusão de fases de mata-mata.
->>>>>>> 436b2c66b6bc3eb2c12db7a829345bcb19a1e090
