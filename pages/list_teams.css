@@ -1,0 +1,163 @@
+/* Reset básico */
+body, h1, div, span, form, label, input, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212; /* Cor de fundo escura */
+    color: #e0e0e0; /* Cor do texto claro */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Alinha ao topo */
+    min-height: 100vh; /* Garante que o body ocupe pelo menos a altura da viewport */
+    margin: 0;
+    overflow: auto; /* Permite rolagem quando necessário */
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 800px;
+    background: #1e1e1e; /* Cor de fundo escura para o container */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Sombra mais intensa para contraste */
+    padding: 20px;
+    margin-top: 20px; /* Adiciona margem superior */
+}
+
+/* Cabeçalho */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2rem;
+    color: #4CAF50; /* Cor do título */
+}
+
+/* Cards de Times */
+.teams-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    background: #2c2c2c; /* Cor de fundo escura para os cards */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra mais intensa para contraste */
+    padding: 20px;
+    width: 100%;
+    max-width: 300px;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-header {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #e0e0e0; /* Cor do texto dos headers dos cards */
+}
+
+.card-content {
+    margin-bottom: 15px;
+}
+
+.card-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.card-actions button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #4CAF50; /* Cor do texto dos botões */
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.card-actions button:hover {
+    color: #45a049; /* Cor de hover dos botões */
+}
+
+/* Modal */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.8); /* Fundo mais escuro para o modal */
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #2c2c2c; /* Cor de fundo escura para o conteúdo do modal */
+    margin: 5% auto; 
+    padding: 20px;
+    border: 1px solid #444; /* Borda mais escura */
+    width: 80%; 
+    max-width: 600px;
+    border-radius: 8px;
+}
+
+.close {
+    color: #bbb;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #e0e0e0; /* Cor clara para hover/focus */
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal form {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal form label {
+    margin-bottom: 5px;
+    color: #e0e0e0; /* Cor do texto dos labels */
+}
+
+.modal form input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #555; /* Borda dos inputs */
+    border-radius: 4px;
+    background-color: #333; /* Cor de fundo dos inputs */
+    color: #e0e0e0; /* Cor do texto dos inputs */
+}
+
+.modal form button {
+    padding: 10px;
+    background-color: #4CAF50; /* Cor de fundo dos botões */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.modal form button:hover {
+    background-color: #45a049; /* Cor de hover dos botões */
+}

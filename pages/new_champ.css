@@ -1,0 +1,96 @@
+/* Reset básico */
+body, h1, form, label, input, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212; /* Cor de fundo escura */
+    color: #e0e0e0; /* Cor do texto clara */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 800px;
+    background: #1e1e1e; /* Cor de fundo escura */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Sombra mais intensa para contraste */
+    padding: 20px;
+}
+
+/* Cabeçalho */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2rem;
+    color: #4CAF50; /* Cor do título */
+}
+
+/* Formulário */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #e0e0e0; /* Cor do texto dos labels */
+}
+
+form input[type="text"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #444; /* Borda escura para inputs */
+    border-radius: 4px;
+    font-size: 1rem;
+    background-color: #333; /* Cor de fundo escura para inputs */
+    color: #e0e0e0; /* Cor do texto dos inputs */
+}
+
+form .teams-list {
+    max-height: 200px;
+    overflow-y: auto;
+    margin-bottom: 15px;
+    border: 1px solid #444; /* Borda escura para lista de times */
+    border-radius: 4px;
+    padding: 10px;
+    background-color: #222; /* Cor de fundo escura para a lista de times */
+}
+
+form .teams-list label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: normal;
+    color: #e0e0e0; /* Cor do texto dos labels na lista de times */
+}
+
+form .teams-list input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+form button {
+    padding: 10px;
+    background-color: #4CAF50; /* Cor de fundo dos botões */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+form button:hover {
+    background-color: #45a049; /* Cor de hover dos botões */
+}

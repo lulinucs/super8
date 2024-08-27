@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Novo Campeonato</title>
+    <link rel="stylesheet" href="new_champ.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Cadastrar Novo Campeonato</h1>
+        </header>
+        <main>
+            <form id="championshipForm">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+                
+                <label for="equipes">Equipes:</label>
+                <div id="teamsList" class="teams-list">
+                    <!-- As equipes serão inseridas aqui dinamicamente -->
+                </div>
+
+                <button type="submit">Cadastrar Campeonato</button>
+            </form>
+        </main>
+    </div>
+    <script src="new_champ.js"></script>
+</body>
+</html>

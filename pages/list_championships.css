@@ -1,0 +1,190 @@
+/* Reset básico */
+body, h1, .championships-list {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212; /* Fundo escuro */
+    color: #e0e0e0; /* Texto claro */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Alinhar ao topo para permitir rolagem */
+    min-height: 100vh; /* Garante que o body tenha altura mínima para rolar */
+    margin: 0;
+    overflow: auto; /* Permitir rolagem se necessário */
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 900px;
+    background: #1e1e1e; /* Fundo escuro do container */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra mais intensa */
+    padding: 20px;
+    margin-top: 20px; /* Adiciona margem no topo para que o conteúdo não fique colado no topo da viewport */
+}
+
+/* Cabeçalho */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #4CAF50; /* Cor do título */
+}
+
+/* Lista de campeonatos */
+.championships-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.championship-card {
+    background: #1e1e1e; /* Fundo escuro do card */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra mais intensa */
+    padding: 20px;
+    border: 1px solid #333; /* Borda escura */
+}
+
+.championship-card h2 {
+    font-size: 1.75rem;
+    margin-bottom: 15px;
+    color: #e0e0e0; /* Cor do título dos cards */
+}
+
+.championship-card p {
+    margin: 10px 0;
+    color: #e0e0e0; /* Cor do texto */
+}
+
+.championship-card .team-list {
+    margin-bottom: 15px;
+}
+
+.championship-card .team-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.championship-card .team-list li {
+    margin-bottom: 5px;
+    color: #e0e0e0; /* Cor do texto */
+}
+
+/* Botões */
+.add-phase-btn {
+    background-color: #4CAF50; /* Cor de fundo do botão */
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.add-phase-btn:hover {
+    background-color: #45a049; /* Cor do botão ao passar o mouse */
+}
+
+/* Modal */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1000; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.5); 
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #1e1e1e; /* Fundo escuro do modal */
+    margin: 5% auto; 
+    padding: 20px;
+    border: 1px solid #444; /* Borda escura */
+    width: 90%; 
+    max-width: 700px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra mais intensa */
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.close:hover,
+.close:focus {
+    color: #e0e0e0; /* Cor ao passar o mouse */
+    text-decoration: none;
+}
+
+.modal form {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal form label {
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #e0e0e0; /* Cor do texto */
+}
+
+.modal form input,
+.modal form select {
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #444; /* Borda dos inputs */
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #333; /* Fundo dos inputs */
+    color: #e0e0e0; /* Cor do texto dos inputs */
+}
+
+.modal form button {
+    padding: 12px 20px;
+    background-color: #4CAF50; /* Cor de fundo do botão */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.modal form button:hover {
+    background-color: #45a049; /* Cor do botão ao passar o mouse */
+}
+
+.view-group-stage-btn {
+    background-color: #2196F3; /* Cor de fundo do botão */
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.view-group-stage-btn:hover {
+    background-color: #1976D2; /* Cor do botão ao passar o mouse */
+}

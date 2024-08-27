@@ -1,0 +1,149 @@
+/* Reset básico */
+body, h1, .container {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212; /* Fundo escuro */
+    color: #e0e0e0; /* Texto claro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 800px;
+    background: #1e1e1e; /* Fundo escuro do container */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Sombra mais intensa */
+    padding: 20px;
+    max-height: 90vh; /* Limita a altura máxima */
+    overflow-y: auto; /* Permite rolar se o conteúdo for maior */
+}
+
+/* Cabeçalho */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2rem;
+    color: #4CAF50; /* Cor do título */
+}
+
+/* Fases */
+.fase {
+    margin-bottom: 20px;
+}
+
+.fase h2 {
+    font-size: 1.5rem;
+    color: #e0e0e0; /* Cor do título das fases */
+    margin-bottom: 10px;
+}
+
+/* Exibição das partidas */
+.match {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Alinha os itens ao centro */
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #333; /* Borda escura */
+    border-radius: 4px;
+    background-color: #333; /* Fundo escuro das partidas */
+}
+
+.match input {
+    width: 50px;
+    text-align: center;
+    border: 1px solid #444; /* Borda dos inputs */
+    border-radius: 4px;
+    padding: 5px;
+    margin: 0 5px;
+    background-color: #444; /* Fundo dos inputs */
+    color: #e0e0e0; /* Cor do texto dos inputs */
+}
+
+/* Remove o botão de aumento/redução de número dos inputs */
+.match input[type="number"]::-webkit-inner-spin-button,
+.match input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Botão de salvar */
+#save-results-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #4CAF50; /* Cor de fundo do botão */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+#save-results-button:hover {
+    background-color: #45a049; /* Cor do botão ao passar o mouse */
+}
+
+/* Novo container para a classificação */
+#classification-container {
+    margin-top: 40px;
+}
+
+.classification-header, .team-card {
+    display: grid;
+    grid-template-columns: 1fr 3fr repeat(3, auto);
+    gap: 10px;
+    background-color: #1e1e1e; /* Fundo escuro */
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Sombra mais intensa */
+}
+
+.classification-header {
+    font-weight: bold;
+    background-color: #4CAF50; /* Cor de fundo do cabeçalho */
+    color: white;
+}
+
+.classification-header div, .team-card div {
+    padding: 5px;
+    text-align: center;
+}
+
+.team-card {
+    background-color: #1e1e1e; /* Fundo escuro das cards */
+    border: 1px solid #333; /* Borda escura */
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Sombra mais intensa */
+}
+
+.position {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #e0e0e0; /* Cor do texto */
+}
+
+.name {
+    font-size: 1.2rem;
+    color: #e0e0e0; /* Cor do texto */
+}
+
+.stats {
+    font-weight: bold;
+    color: #e0e0e0; /* Cor do texto */
+}
