@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Projeto Super8
 
 Este é um projeto simples de gestão de campeonatos de bike polo, desenvolvido para uma liga local em comemoração aos 8 anos do Bike Polo Floripa. O objetivo é fornecer uma solução para o gerenciamento de times e campeonatos, com um foco especial na fase de grupos.
